@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ServicioFamiliarService } from '../servicio-familiar.service';
 
 @Component({
   selector: 'app-padre',
@@ -6,6 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./padre.component.css']
 })
 export class PadreComponent {
+
+  constructor(
+    private _servicioFamiliar : ServicioFamiliarService
+  ){
+
+  }
+
+
 
   mensajeRecibido: string = '';
 
