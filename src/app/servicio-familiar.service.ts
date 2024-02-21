@@ -17,7 +17,7 @@ export class ServicioFamiliarService {
     }
 
     getHermanoPequeno(): string {
-      return this.hermanoGrande || '';
+      return this.hermanoPequeno || '';
     }
 
     setHermanoPequeno(hermano: string) {
